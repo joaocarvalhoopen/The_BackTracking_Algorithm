@@ -36,10 +36,11 @@ SEQUENCE_ELEMENTS = ['A', 'B', 'C']
 def printSequences(state, message):
     print("\n" + message + "\n")
     for seq in state:
-        for i in range(0, MAX_SEQUENCE_LENGTH):
-            print(seq[i], end='')
-            if i == MAX_SEQUENCE_LENGTH-1:
-                    print()
+#        for i in range(0, MAX_SEQUENCE_LENGTH):
+#            print(seq[i], end='')
+#            if i == MAX_SEQUENCE_LENGTH-1:
+#                    print()
+        print("".join(seq.tolist()))
 
 def isSequenceStateConstrainsSatisfied(index, state):
     # Check the constrains. 
